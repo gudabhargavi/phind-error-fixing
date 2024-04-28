@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-item {
+            width: 200px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Our Jewelry Shop</h1>
+        <div class="product">
+            <div class="product-item">
+                <img src="ring.jpg" alt="Ring">
+                <h2>Ring</h2>
+                <p>A beautiful ring for your special day.</p>
+            </div>
+            <div class="product-item">
+                <img src="earring.jpg" alt="Earring">
+                <h2>Earring</h2>
+                <p>Elegant earrings to complement your style.</p>
+            </div>
+            <div class="product-item">
+                <img src="bracelet.jpg" alt="Bracelet">
+                <h2>Bracelet</h2>
+                <p>A bracelet that adds a touch of elegance.</p>
+            </div>
+            <div class="product-item">
+                <img src="chain.jpg" alt="Chain">
+                <h2>Chain</h2>
+                <p>A chain that's perfect for your necklace.</p>
+            </div>
+            <div class="product-item">
+                <img src="watch.jpg" alt="Watch">
+                <h2>Watch</h2>
+                <p>A watch that tells time with style.</p>
+            </div>
+        </div>
+
+        <form>
+            <h2>Contact Us</h2>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2023 Jewelry Shop. All rights reserved.
+    </footer>
+</body>
+</html>
